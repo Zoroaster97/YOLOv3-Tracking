@@ -64,7 +64,7 @@ def detect_directory(model_path, weights_path, img_path, classes, output_path,
     print(f"---- Detections were saved to: '{output_path}' ----")
 
 
-def detect_image(model, image, img_size=416, conf_thres=0.5, nms_thres=0.5):
+def detect_image(model, image, img_size=416, conf_thres=0.5, nms_thres=0.5, return_feats=False):
     """Inferences one image with model.
 
     :param model: Model for inference
